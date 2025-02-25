@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Charan Aravind Anem</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <h1 class="logo">Charan Aravind</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Hi, I'm <span>Charan Aravind</span></h2>
+            <p> A passionate Frontend Developer with a knack for crafting intuitive and visually stunning user interfaces. With a keen eye for detail and a love for problem-solving.</p>
+            <a href="Charan_new_resume.pdf" class="btn" download>Download Resume</a>
+        </div>
+    </section>
+
+
+    <div id="skills">
+        <h1 class="section-title">Skills</h1>
+    <div id="skillsbox">
+        <div class="skillcontainer">
+            <div class="image">
+                <img src="frontendskills.jpg" alt="">
+            </div>
+            <div class="text">
+                <h2>Frontend technologies</h2>
+                <p>I showcase my ability to craft user-friendly websites using HTML, CSS, and JavaScript. Explore my projects to see how I combine these skills to build engaging and accessible web experiences.</p>
+            </div>
+        </div>
+    
+        <div class="skillcontainer">
+            <div class="text">
+                <h2>C/C++ Programming</h2>
+                <p>Proficient in problem-solving utilizing both C and C++, with a demonstrated ability to develop efficient solutions. Experienced in leveraging these languages to address a variety of challenges.</p>
+            </div>
+            <div class="image">
+                <img src="clanguage.png" alt="">
+            </div>
+           
+        </div>
+        <div class="skillcontainer">
+            <div class="image">
+                <img src="datastructures.jpg" alt="">
+            </div>
+            <div class="text">
+                <h2>Data Structures and Algorithms</h2>
+                <p>Skilled in implementing efficient data structures using C and C++, with a proven track record of creating optimized solutions. Experienced in crafting data structures to enhance performance and scalability.</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <section id="projects" class="section">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-container">
+    
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="project1-desktop.png" alt="Project One">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Restaurant Rating System</h3>
+                    <p class="project-description"> Restaurant Rating System that allows users to log in, rate restaurants, and view average ratings. Integrated a real-time rating calculation system and ensured seamless frontend-backend communication using Axios. Tech Stack: React.js, PHP, MySQL, Axios.</p>
+                </div>
+            </div>
+    
+    
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="project3-desktop.png" alt="AI Code Review Tool">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Freelancing</h3>
+                    <p class="project-description">Designed and developed a responsive website for Jayalaxmi Enterprises using React.js, which led to improved user experience and seamless navigation. Integrated animations with React-Reveal and deployed on Netlify, resulting in a visually appealing and high-performing website.</p>
+                </div>
+            </div>
+
+            
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="project4-desktop.png" alt="Smart LIC Policy Recommender">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Smart LIC Policy Recommender</h3>
+                    <p class="project-description">Currently working on a smart LIC policy recommendation system that suggests optimal insurance policies based on user preferences. Developing a comparison engine that evaluates policies based on premiums, benefits, and tax advantages.</p>
+                </div>
+            </div>
+    
+        </div>
+    </section>
+    
+    
+    <div id="contactme">
+        <h1 class="section-title">Contact Me</h1>
+       <div class="contactcontainer">
+        <p>Feel free to reach out to me via the following methods:</p>
+        <div class="contacts">
+           <a href="https://www.instagram.com/charan__2004__"><i class="fa-brands fa-instagram"></i></a> 
+           <a href="https://www.linkedin.com/in/charan-aravind-aa3937258/"><i class="fa-brands fa-linkedin"></i></a>  
+            <a href="mailto:charan27072005@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+        
+       </div>
+    </div>
+    
+    
+    <footer>
+        <p>&copy; 2024 Charan Aravind Anem</p>
+    </footer>
+
+    <script>
+  
+        document.querySelectorAll('nav ul li a').forEach(anchor => {
+            anchor.addEventListener('mouseover', () => {
+                anchor.style.color = '#ff4747';
+            });
+            anchor.addEventListener('mouseout', () => {
+                anchor.style.color = '#fff';
+            });
+        });
+
+        document.querySelectorAll('.card').forEach(card => {
+            card.addEventListener('mouseover', () => {
+                card.style.transform = 'scale(1.05)';
+                card.style.transition = 'transform 0.3s ease-in-out';
+            });
+            card.addEventListener('mouseout', () => {
+                card.style.transform = 'scale(1)';
+            });
+        });
+
+    </script>
+</body>
+</html>
